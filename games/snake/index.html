@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			html,
+			body {
+				background: #00FFFF;
+				height: hidden;
+			}
+
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			#canvas {
+				margin: 3px;
+				display: block;
+				height: 400px;
+				margin-bottom: 0;
+			}
+
+			form {
+				display: flex;
+				align-items: center;
+
+				color: white;
+				padding: 5px;
+
+				user-select: none;
+			}
+
+			div#ads {
+				margin: 3px;
+			}
+
+			[hidden] {
+				display: none !important;
+			}
+		</style>
+		<title>Snake</title>
+	</head>
+	<body>
+		<canvas id="canvas" width="960" height="960"></canvas>
+
+		<script src="app.js"></script>
+
+		<div id="ads"></div>
+	</body>
+</html>
