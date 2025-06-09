@@ -1,0 +1,38 @@
+body.theme-classic {
+  --bg-color: #000;
+  --accent-color: #fff;
+  --primary-text-color: #eee;
+  --secondary-text-color: #777;
+
+  --bg-gradient: none;
+  --box-glow: none;
+  --border-color: #333;
+  --text-glow: none;
+  --overlay-glow: none;
+  --overlay-bg: rgba(0, 0, 0, 0.4);
+
+  --button-bg: #111;
+  --button-color: #eee;
+  --button-text-shadow: none;
+  --button-border-radius: 0;
+  --button-border: 1px solid #444;
+  --button-hover-opacity: 1;
+  --button-hover-scale: 1;
+
+  --editor-bg: #0a0a0a;
+  --key-bg: #111;
+  --key-color: #ccc;
+  --add-key-bg: #1a1a1a;
+  --remove-btn-color: #666;
+  --button-text-shadow: none;
+
+  --cell-glow: none;
+
+  --font-family: "Montserrat", sans-serif;
+  --font-weight: 650;
+  --overlay-font-family: "Montserrat", sans-serif;
+  --overlay-font-size: 13px;
+
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+}

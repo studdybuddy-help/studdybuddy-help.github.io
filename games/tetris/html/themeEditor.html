@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>__MSG_selectTheme__</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/theme-classic.css" />
+    <link rel="stylesheet" href="../css/theme-rose.css" />
+    <link rel="stylesheet" href="../css/theme-wave.css" />
+    <link rel="stylesheet" href="../css/theme-heat.css" />
+    <link rel="stylesheet" href="../css/theme-eclipse.css" />
+    <script type="module" src="../js/themeEditor-bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="theme-editor">
+      <h2 data-i18n="selectTheme">Choose Your Theme</h2>
+
+      <!-- Theme Selection Buttons -->
+      <div class="theme-buttons">
+        <button class="theme-btn" data-theme="classic" data-i18n="themeClassic">
+          Classic
+        </button>
+        <button class="theme-btn" data-theme="wave" data-i18n="themeWave">
+          Wave
+        </button>
+        <button class="theme-btn" data-theme="heat" data-i18n="themeHeat">
+          Heat
+        </button>
+        <button class="theme-btn" data-theme="rose" data-i18n="themeRose">
+          Rose
+        </button>
+        <button class="theme-btn" data-theme="eclipse" data-i18n="themeEclipse">
+          Eclipse
+        </button>
+        <button class="theme-btn" data-theme="custom" data-i18n="themeCustom">
+          Custom
+        </button>
+      </div>
+
+      <!-- Custom Theme Form -->
+      <div id="custom-theme-form">
+        <div class="theme-section">
+          <h3 data-i18n="themeColors">Theme Colors</h3>
+          <div class="theme-input-group">
+            <label for="custom-bg">
+              <span data-i18n="bgColor">Background Color</span>:
+            </label>
+            <input type="color" id="custom-bg" />
+          </div>
+          <div class="theme-input-group">
+            <label for="custom-accent"
+              ><span data-i18n="accentColor">Accent Color</span>:</label
+            >
+            <input type="color" id="custom-accent" />
+          </div>
+        </div>
+
+        <div class="theme-section">
+          <h3 data-i18n="textAndBorder">Text & Border</h3>
+          <div class="theme-input-group">
+            <label for="custom-primary-text-color"
+              ><span data-i18n="primaryTextColor">Primary Color</span>:</label
+            >
+            <input type="color" id="custom-primary-text-color" />
+          </div>
+          <div class="theme-input-group">
+            <label for="custom-secondary-text-color"
+              ><span data-i18n="secondaryTextColor">Secondary Text Color</span
+              >:</label
+            >
+
+            <input type="color" id="custom-secondary-text-color" />
+          </div>
+          <div class="theme-input-group">
+            <label for="custom-border-color"
+              ><span data-i18n="borderColor">Border Color</span>:</label
+            >
+            <input type="color" id="custom-border-color" />
+          </div>
+        </div>
+
+        <div class="theme-section">
+          <h3 data-i18n="pieceColors">Piece Colors</h3>
+          <div id="custom-piece-colors">
+            <input type="color" id="color-t" />
+            <input type="color" id="color-j" />
+            <input type="color" id="color-l" />
+            <input type="color" id="color-o" />
+            <input type="color" id="color-s" />
+            <input type="color" id="color-z" />
+            <input type="color" id="color-i" />
+          </div>
+        </div>
+
+        <div class="theme-section">
+          <h3 data-i18n="effectsAndGlow">Effects & Glow</h3>
+          <div class="theme-input-group">
+            <label for="custom-box-glow"
+              ><span data-i18n="boxGlow">Box Glow</span>:</label
+            >
+            <input type="text" id="custom-box-glow" />
+          </div>
+          <div class="theme-input-group">
+            <label for="custom-text-glow"
+              ><span data-i18n="textGlow">Text Glow</span>:</label
+            >
+            <input type="text" id="custom-text-glow" />
+          </div>
+          <div class="theme-input-group">
+            <label for="custom-font"
+              ><span data-i18n="fontFamily">Font Family</span>:</label
+            >
+            <input type="text" id="custom-font" />
+          </div>
+          <div class="theme-input-group">
+            <label for="custom-editor-bg"
+              ><span data-i18n="overlayBg">Overlay Background</span>:</label
+            >
+            <input type="color" id="custom-editor-bg" />
+          </div>
+          <div class="theme-input-group">
+            <label for="custom-cell-glow"
+              ><span data-i18n="cellGlow">Cell Glow</span>:</label
+            >
+            <select id="custom-cell-glow">
+              <option value="none" data-i18n="glowNone">None</option>
+              <option value="pulse" data-i18n="glowPulse">Pulse</option>
+              <option value="5" data-i18n="glow5">Static 5</option>
+              <option value="8" data-i18n="glow8">Static 8</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <button id="save-custom-theme" data-i18n="saveTheme">
+          Save Custom Theme
+        </button>
+      </div>
+      <button id="cancel-theme" data-i18n="backToGame">Back to Game</button>
+      <!-- Closed custom-theme-form -->
+    </div>
+    <!-- Closed theme-editor -->
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trixel</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/theme-classic.css" />
+    <link rel="stylesheet" href="../css/theme-rose.css" />
+    <link rel="stylesheet" href="../css/theme-wave.css" />
+    <link rel="stylesheet" href="../css/theme-heat.css" />
+    <link rel="stylesheet" href="../css/theme-eclipse.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      as="style"
+    />
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="top-bar">
+        <button id="restart" title="Restart">&#8634;</button>
+        <div id="score-container">
+          <div id="score">0</div>
+          <div id="best-score">
+            <span data-i18n="bestScorePrefix"></span>:
+            <span id="best-score-value">0</span>
+          </div>
+        </div>
+        <button id="pause" title="Pause">⏸</button>
+      </div>
+      <canvas id="trixel" width="300" height="540"></canvas>
+      <div id="piece-bag"></div>
+      <div id="pause-menu" style="display: none">
+        <h2 data-i18n="gamePaused">Game Paused</h2>
+        <button id="btn-edit-controls" data-i18n="editControls">
+          Edit Controls
+        </button>
+        <button id="btn-edit-theme" data-i18n="editTheme">Edit Theme</button>
+      </div>
+      <div id="controls-overlay" class="overlay fade-in">
+        <p><span>↑ W</span> — <span data-i18n="rotate">Rotate</span></p>
+        <p><span>← A / → D</span> — <span data-i18n="move">Move</span></p>
+        <p><span>↓ S</span> — <span data-i18n="softDrop">Soft drop</span></p>
+        <p><span>Space</span> — <span data-i18n="hardDrop">Hard drop</span></p>
+        <p>
+          <span>X</span> —
+          <span data-i18n="toggleGhost">Toggle ghost piece</span>
+        </p>
+        <p><span>C</span> — <span data-i18n="holdPiece">Hold piece</span></p>
+        <p>
+          <span>Esc</span> — <span data-i18n="closePopup">Close popup</span>
+        </p>
+      </div>
+    </div>
+    <script type="module" src="../js/main-bundle.js"></script>
+  </body>
+</html>
