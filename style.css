@@ -124,3 +124,18 @@ footer {
   margin-bottom: 0.8rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
+.Credits{
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+.licredits{
+  text-decoration: none;
+  color: black;
+}
+
+.licredits:hover {
+  text-decoration: underline;
+}
