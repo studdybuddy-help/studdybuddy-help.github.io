@@ -133,6 +133,8 @@ footer {
 .licredits{
   text-decoration: none;
   color: black;
+  text-align: center;
+  padding: 0;
 }
 
 .licredits:hover {
