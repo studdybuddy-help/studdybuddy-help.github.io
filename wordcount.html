@@ -23,16 +23,19 @@
   </header>
 
   <main>
-    <section class="tools-section">
-      <h2>Study Tools</h2>
-      <div class="tool-grid">
-        <a href="flashcards.html" class="tool-tile">Flashcards</a>
-        <a href="quizzes/index.html" class="tool-tile">Quizzes</a>
-        <a href="blookets.html" class="tool-tile">Blookets</a>
-        <a href="wordcount.html" class="tool-tile">Word Counter</a>
-        <!-- Add more tools here -->
-      </div>
-    </section>
+        <h1 style="text-align: center;">Word Counter</h1>
+        <textarea name="idk" id="textarea" rows="20" style="width: 100%;">Input text here</textarea>
+        <p id="wordcount">Words: 0</p> 
+        <button type="button" onclick="Check()">Refresh</button>
+        <script>
+            function WordCount(str) { 
+                 return str.split(" ").length;
+            }
+            function Check() {
+                    document.getElementById("wordcount").innerHTML = "Words: " + WordCount(document.getElementById("textarea").value)
+            }
+            Check()
+        </script>
   </main>
 
   <footer>
