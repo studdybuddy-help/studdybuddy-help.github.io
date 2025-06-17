@@ -6,10 +6,10 @@
   <title>Study Tools - StuddyBuddy</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body id="Main">
   <header>
     <div class="nav-container">
-      <h1 class="logo">StuddyBuddy</h1>
+      <h1 class="logo" onclick="poopypants()">StuddyBuddy</h1>
       <nav>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -24,9 +24,9 @@
 
   <main>
         <h1 style="text-align: center;">Word Counter</h1>
-        <textarea name="idk" id="textarea" rows="20" style="width: 100%;">Input text here</textarea>
+        <textarea name="idk" id="textarea" rows="20" style="width: 100%;" onkeypress="Check()">Input text here</textarea>
         <p id="wordcount">Words: 0</p> 
-        <button type="button" onclick="Check()">Refresh</button>
+        <button type="button" onchange="Check()">Refresh</button>
         <script>
             function WordCount(str) { 
                  return str.split(" ").length;
@@ -42,4 +42,5 @@
     <p>&copy; 2025 StuddyBuddy. All rights reserved.</p>
   </footer>
 </body>
+  <script src="script.js"></script>
 </html>
